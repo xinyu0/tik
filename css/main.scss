@@ -6,16 +6,21 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: 'Roboto', Helvetica, sans-serif;
+$h-font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+$base-font-size:   1.1rem;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$text-color: #111;
+$background-color: #fff;
+$brand-color: #424242;
+$primary-color:	#14B7EC;
+// $primary-color:	black;
+// $secondary-color:	#F85000;
+$secondary-color:	#EF3431;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -37,7 +42,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
@@ -46,7 +51,179 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "reset",
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "responsive-nav"
 ;
+
+	h1 {
+	font-size: 2rem;
+
+	@include media-query($on-laptop) {
+	    font-size: 3rem;
+	}
+	}
+    h2 {
+        font-size: 2rem;
+
+        @include media-query($on-laptop) {
+            font-size: 2.5rem;
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+
+        @include media-query($on-laptop) {
+            font-size: 26px;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+
+        @include media-query($on-laptop) {
+            font-size: 20px;
+        }
+    }
+
+
+// grids
+$col: 4.6%;
+$gut: 4%;
+
+@mixin grid($cnum) {
+  width: ($col*$cnum)+($gut*(($cnum)-1));
+  float: left;
+  margin-right: $gut;
+  margin-bottom: 3rem;
+  box-sizing:border-box;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col7, .col8, .col9 { 
+    width:100%;
+    margin-bottom: 1rem;
+    min-height: 200px;
+}
+
+
+.col6 { 
+    width:100%;
+    margin-bottom: 1rem;
+    // min-height: 200px;
+}
+
+.col12 { 
+    width:100%;
+    margin-bottom: 3rem;
+}
+
+
+
+.col4, .col8 {
+  border-top: 1px solid black;
+  // padding-top: 30px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: $on-palm) {
+  
+.col1 {
+  @include grid(1);
+}
+.col2 {
+  @include grid(2);
+}
+
+.col3 {
+  @include grid(3);
+}
+
+.col4 {
+  @include grid(4);
+  &:last-of-type {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.col5 {
+  @include grid(5);
+}
+
+.col6 {
+  @include grid(6);
+  &:last-of-type {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  position: relative;
+}
+
+.col7 {
+  @include grid(7);
+}
+
+.col8 {
+  @include grid(8);
+  margin-right: 0;
+}
+
+.col9 {
+  @include grid(9);
+}
+
+// div:last-of-type {
+//   margin-right: 0;
+// }
+.col12 {
+  @include grid(12);
+}
+}
+
+.main {
+	background: linear-gradient(rgba(20,183,236,0.3), rgba(20,183,236,0.3)),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+	background-size: cover;
+	height: 700px;
+	h1 {
+		color:$secondary-color;
+		// color:$primary-color;
+		// color: white;
+		font-size: 5rem;
+		text-transform: uppercase;
+		letter-spacing: 1rem;
+		font-weight: bold;
+		// text-align: center;
+		
+		opacity: 0.5;
+		&:nth-of-type(1) {
+			margin-top: 10rem;
+			color:$primary-color;
+		}
+	}
+	}
+
+
+
+// .main {
+// 	background: rgba(255,255,255,1);
+// 	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(250,250,250,0) 100%),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+// 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(250,250,250,0))),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+// 	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(250,250,250,0) 100%),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+// 	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(250,250,250,0) 100%),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+// 	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(250,250,250,0) 100%),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+// 	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(250,250,250,0) 100%),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+//   background-size:cover;
+//   height: 500px;
+//   // &:hover {
+//   //   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("http://xinyudesign.com/images/work/ed2015/iMac.png") no-repeat center center;
+//   // background-size:400px;
+
+// }
+
+// * {
+//    border: 1px solid red !important;
+// }
