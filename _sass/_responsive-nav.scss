@@ -1,24 +1,20 @@
 /*! responsive-nav.js 1.0.39 by @viljamis */
 
 .nav-collapse ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: inline-block;
   list-style: none;
-  float: right;
   height: 80px;
 }
 
 .nav-collapse li {
-  // width: 100%;
   display: inline-block;
   height: 80px;
-  float: right;
-  width:141px;
-  border-left: 1px $link-color solid;
-  &:first-of-type {
-    border-right: 1px $link-color solid;
-  }
+  // border-left: 1px $link-color solid;
+  // &:first-of-type {
+  //   border-right: 1px $link-color solid;
+  // }
 
 }
 
@@ -48,15 +44,23 @@
 @media screen and (min-width: 40em) {
   .js .nav-collapse {
     position: relative;
-    
+    width: 70%;
     float: right;
+    // margin: 0 auto;
+    // background: #ABB94B;
+    li {
+      text-align: center;
+    }
     a {
       font-family: $h-font-family;
+      font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       line-height: 79px;
       padding: 0 30px;
-      font-weight: bold;
+      // color: #523300;
+      font-weight: 600;
+
     }
   }
   .js .nav-collapse.closed {

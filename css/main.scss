@@ -7,12 +7,12 @@
 
 // Our variables
 $base-font-family: 'Roboto', Helvetica, sans-serif;
-$h-font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+$h-font-family: 'Josefin Sans', 'Roboto Condensed', Helvetica, Arial, sans-serif;
 $base-font-size:   1.1rem;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
 
-$spacing-unit:     30px;
+$spacing-unit:     20px;
 
 $text-color: #332200;
 $background-color: #F5F6F0;
@@ -20,11 +20,12 @@ $brand-color: #424242;
 $primary-color:	#B0BF24;
 // $primary-color:	black;
 $secondary-color:	#F85000;
-$link-color:#533401;
+$link-color:#523300;
 
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+
+$grey-color:       #523300;
+$grey-color-light: lighten($grey-color, 10%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -48,6 +49,15 @@ $on-laptop:        800px;
     }
 }
 
+@mixin impt-font {
+  font-family: $h-font-family;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 0 30px;
+  font-weight: 600;
+}
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
@@ -57,8 +67,31 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting",
         "responsive-nav",
-        "style"
+        "bourbon"
 ;
+
+
+.order {
+  @include border-top-radius(50%);
+  @include border-right-radius(50%);
+  @include border-bottom-radius(50%);
+  @include border-left-radius(50%);
+  background: $primary-color;
+  width: 150px;
+  height: 150px;
+  float: right;
+  padding-top: 32px;
+   box-sizing:border-box;
+   text-align: center;
+   margin-top: -200px;
+  a h3 {
+  @include impt-font;
+  text-align: center;
+  &:hover {
+    color: white;}
+}
+}
+
 
 	h1 {
 	font-size: 2rem;
@@ -104,16 +137,27 @@ $gut: 4%;
   box-sizing:border-box;
 }
 
-.col1, .col2, .col3, .col4, .col5, .col7, .col8, .col9 { 
+.col1, .col2, .col5, .col7, .col8, .col9 { 
     width:100%;
     margin-bottom: 1rem;
-    min-height: 200px;
 }
 
 
 .col6 { 
     width:100%;
     margin-bottom: 1rem;
+    // min-height: 200px;
+}
+
+.col3  { 
+    width:100%;
+    margin-bottom: 1rem;
+    // min-height: 200px;
+}
+
+.col4  { 
+    width:100%;
+    margin-bottom: 10px;
     // min-height: 200px;
 }
 
@@ -124,11 +168,12 @@ $gut: 4%;
 
 
 
-.col4, .col8 {
+.col8 {
   border-top: 1px solid black;
   // padding-top: 30px;
   margin-top: 50px;
 }
+
 
 @media screen and (min-width: $on-palm) {
   
@@ -141,13 +186,15 @@ $gut: 4%;
 
 .col3 {
   @include grid(3);
+
 }
 
 .col4 {
   @include grid(4);
+  margin-bottom: 10px;
   &:last-of-type {
     margin-right: 0;
-    margin-bottom: 2rem;
+    
   }
 }
 
@@ -192,15 +239,15 @@ $gut: 4%;
 	height: 350px;
   margin-bottom:40px;
 	h1 {
-		color:$primary-color;
-		// color: white;
-		font-size: 5rem;
+		// color:$primary-color;
+		color: white;
+		font-size: 4rem;
 		text-transform: uppercase;
 		letter-spacing: 1rem;
 		font-weight: bold;
-		&:nth-of-type(1) {
-			color:$primary-color;
-		}
+		// &:nth-of-type(1) {
+		// 	color:$primary-color;
+		// }
 	}
 	}
 
@@ -230,5 +277,22 @@ $gut: 4%;
   display: block;
   float: left;
   width: 150px;
-  margin-top: 40px;
+  // margin: 40px 0;
+}
+
+.logosm {
+  border-bottom: 2px white solid;
+  text-align: center;
+  font-size: 1rem;
+  color:$grey-color;
+  span{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    height: 1.2rem;
+    color:$grey-color-light;
+  
+}
 }

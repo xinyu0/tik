@@ -3,15 +3,13 @@
  */
 .site-header {
     // height: 56px;
-    padding: $spacing-unit;
+    padding: $spacing-unit 0;
     width: 100%;
     // Positioning context for the mobile navigation icon
     // position: fixed;
     // background: linear-gradient(rgba(20,183,236,0.3), rgba(20,183,236,0.3));
     // background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8));
     // border-top: 2px $primary-color solid;
-    
-
 }
 
 #site-title {
@@ -30,11 +28,13 @@
  * Site footer
  */
 .site-footer {
-    background: #424243;
+    background: #EDEADE;
     // background: linear-gradient(rgba(20,183,236,0.5), rgba(20,183,236,0.5));
     clear: both;
     padding: $spacing-unit 0;
-    color: white;
+    border-top: 2px white solid;
+    // color: white;
+    font-size: 0.9rem;
 
 }
 

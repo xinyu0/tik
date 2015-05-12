@@ -1,24 +1,23 @@
 <header class="site-header">
   <div class="wrapper">
+    
     <a href="{{ site.baseurl }}/"><img class="logo" src="http://i.imgur.com/oLziwvU.png" width="170" alt="tarka Indian Kitchen" title="tarka" /></a>
-    
-    <ul id="navUtility">
+<!--     <ul id="navUtility">
       <li>Sun–Thu/11:00am−9:00pm Fri–Sat/11:00am−10:00pm</li>
-    </ul>
+    </ul> -->
+
+
+
+  <nav class="nav-collapse">
     
-      <nav class="nav-collapse">
+
         <ul>
           {% for page in site.pages %}
             {% if page.title %}
             <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
-          <li><a class="page-link" href="#">VIP</a></li>
         </ul>
-      </nav>
-
-  </div>
+        
+  </nav></div>
 </header>
-
-
-
