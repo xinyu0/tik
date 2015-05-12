@@ -1,0 +1,761 @@
+.linkStyle1 span{
+    padding-left:15px;
+    background:url("/img/common/arrow_01.gif") no-repeat scroll 0 48% transparent;
+}
+.linkStyle2{
+    text-align:right;
+}
+/*.linkStyle3=footerlinklist*/
+.linkStyle3 span{
+    background:url("/img/common/arrow_02.gif") no-repeat scroll 0 48% transparent;
+    padding-left:10px;
+}
+.linkStyle4 span{
+    padding-left:15px;
+    background:url("/img/common/arrow_03.png") no-repeat scroll 0 48% transparent;
+}
+.linkStyle5 span{
+    padding-left:15px;
+    background:url("/img/common/arrow_04.png") no-repeat scroll 0 48% transparent;
+}
+
+.btnStyle1:hover {
+    opacity:0.8;
+}
+
+.ttlStyle3 a:visited,
+.ttlStyle3 a:link{
+    color: #99aa22;
+}
+
+/* --------------------------------------------------
+    2. Heading, Paragraph
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    line-height: 1.2;
+}
+#container .bold{
+    font-weight:bold;
+}
+#container .attention{
+    color:#dd6611;
+}
+#container .gray{
+    color:#777777;
+    display:block;
+    margin:5px 0 0;
+}
+#container .note{
+    font-size:85%;
+}
+
+/* --------------------------------------------------
+    3. List
+-------------------------------------------------- */
+li { list-style: none; }
+.listStyle1{
+    padding-left:15px;
+    background:url("/img/common/ico_01.png") no-repeat scroll 0 48% transparent;
+}
+
+/* --------------------------------------------------
+    4. Table
+-------------------------------------------------- */
+.tblGrade table {
+    width:100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+    font-family: inherit;
+}
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+/* --------------------------------------------------
+    5. Form
+-------------------------------------------------- */
+fieldset { border: none; }
+
+input, textarea, select, label {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: middle;
+}
+label { cursor: pointer; }
+
+textarea { overflow: auto; }
+
+/* --------------------------------------------------
+    6. Other
+-------------------------------------------------- */
+img {
+    border: none;
+    vertical-align: bottom;
+    -ms-interpolation-mode: bicubic; 
+}
+.thumb img{
+    border:3px solid #CCCCCC;
+}
+.thumb a:hover img{
+    border:3px solid #bbbf11;
+}
+
+object {
+    vertical-align: middle;
+    outline: none;
+}
+em, strong {
+    font-weight: bold;
+    font-style: normal;
+}
+abbr, acronym {
+    border: none;
+    font-variant: normal;
+}
+q:before, q:after { content: ''; }
+
+address, caption, cite, code, dfn, var {
+    font-weight: normal;
+    font-style: normal;
+}
+code, pre { font-family: monospace; }
+
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+hr { display: none; }
+
+
+/* ------------------------------------------------------------
+    7. For IE6/7
+------------------------------------------------------------ */
+
+/* --- for ie7: page zoom bug fix --- */
+*:first-child+html body,
+*:first-child+html br { letter-spacing: 0; }
+
+
+/* siteName
+----------------------------------- */
+#siteName {
+    float:left;
+    margin:32px 0 0;
+    padding-bottom:38px;
+    }
+    
+/* navUtility
+----------------------------------- */
+#navUtility {
+    float:right;
+    // clear: both;
+    font-size:77%;
+    // margin:10px 0;
+    }
+#navUtility li{
+    // display:inline;
+    // padding-left:8px;
+}
+
+/* navGlobal
+----------------------------------- */
+#navGlobal {
+    float:right;
+    display:block;
+    }
+#navGlobal li {
+    display:inline;
+    float:left;
+    }
+
+/* topicPath
+----------------------------------- */
+#topicPath {
+    float:right;
+    font-size:85%;
+    min-height: 50px;
+    line-height: 65px;
+    _line-height: 1;
+    _padding-top:30px;
+}
+#topicPath span {
+    margin: 0 0.5em;
+}
+#topicPath strong {
+    font-weight: normal;
+}
+
+/* --------------------------------------------------
+    2. Content
+-------------------------------------------------- */
+#content {
+}
+#main {
+    float: left;
+    // width: 690px;
+    padding-bottom:50px;
+}
+#sub {
+    float: right;
+    width: 220px;
+    padding-bottom:50px;
+}
+#sub .SubBnrList li{
+    margin-bottom:5px;
+}
+.subUnit01 li{
+    padding-bottom:10px;
+    margin-bottom:10px;
+    background:url("/img/common/line_dotted_03.png") repeat-x scroll 0 100% transparent;
+}
+
+/* --------------------------------------------------
+    3. Footer
+-------------------------------------------------- */
+#footer {
+    background:#edeade;
+    border-top:1px #ffffff solid;
+    width:100%;
+}
+#footerWrapper{
+    width: 940px;
+    margin: 0 auto;
+    padding:30px 0 20px;
+}
+.goPageTop{
+    float:right;
+    margin-top:-53px;
+}
+.blockfooter03{
+    width:940px;
+    background:url("/img/common/line_dotted_02.gif") repeat-x scroll 0 100% transparent;
+    padding-bottom:20px;
+}
+
+/* access
+----------------------------------- */
+.blockfooter01{
+    width:380px;
+    float:left;
+}
+#footer h2{
+    float:left;
+    padding:0;
+}
+.blockfooter01 .linkStyle1{
+    padding-top:3px;
+}
+.blockfooter01 dt{
+    float:left;
+    font-weight:bold;
+}
+.blockfooter01 dd{
+    float:left;
+    padding-right:15px;
+    }
+
+/* footerlist
+----------------------------------- */
+.blockfooter02{
+    float:right;
+    width:160px;
+    padding:15px 0 0 15px;
+    line-height:1.8;
+}
+#footer .blockfooter02 a:link ,
+#footer .blockfooter02 a:visited {
+    color: #332200;
+    text-decoration: none;
+}
+#footer .blockfooter02 a:hover,
+#footer .blockfooter02 a:active  {
+    color: #556600;
+    text-decoration: underline;
+}
+
+/* blockBowlsSocial
+----------------------------------- */
+.blockBowlsSocialItem{
+    float:left;
+    margin-right:10px;
+}
+
+/* kayacProject
+----------------------------------- */
+#boxKayacLink{
+    background:url("/img/common/line_dotted_02.gif") repeat-x 0 0;
+    padding-top:20px;
+}
+
+.unitKayacLink{
+    margin-bottom: 10px;
+    font-size: 77%;
+}
+
+.unitKayacLink a{
+    color: #666;
+}
+
+.unitKayacLink a:hover{
+    color: #333;
+}
+
+.unitKayacLink dt{
+    float: left;
+    width: 110px;
+}
+
+.unitKayacLink dd{
+    zoom: 1;
+    overflow: hidden;
+}
+
+.unitKayacLink li{
+    display: inline-block;
+    margin-right: .5em;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* copyright
+----------------------------------- */
+#footer .copyright {
+    text-align: center;
+}
+
+/* //////////////////////////////////////////////////
+[Module] 
+////////////////////////////////////////////////// */
+
+/* --------------------------------------------------
+    1. Common Module
+-------------------------------------------------- */
+
+/* ttl
+----------------------------------- */
+.bgH2{
+    background-color:#e4e4cc;
+    height:50px;
+    width:100%;
+}
+.blockH2{
+    height:50px;
+    width:940px;
+    margin:0 auto;
+}
+.ttlStyle2{
+    float:left;
+}
+
+.ttlStyle3{
+    color:#99aa22;
+    font-size:170%;
+    font-weight:normal;
+    padding-bottom:7px;
+    margin-bottom:20px;
+    }
+.ttlStyle4{
+    color:#523300;
+    font-size:139%;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.ttlStyle5{
+    font-weight:bold;
+    margin-bottom:10px;
+    color:#523300;
+}
+.ttlStyle6{
+    background:url("/img/common/line_dotted_01.gif") repeat-x scroll 0 100% transparent;
+    margin-bottom:20px;
+}
+.ttlStyle7{
+    color:#99aa22;
+    font-size:170%;
+    font-weight:normal;
+    padding-bottom:7px;
+    float:left;
+}
+.ttlStyle8{
+    float:right;
+    padding-top:5px;
+}
+.ttlStyle9{
+    color:#523300;
+    font-size:139%;
+    font-weight: normal;
+    padding-bottom:5px;
+    background:url("/img/menu/line_dotted_01.gif") repeat-x scroll 0 100% transparent;
+    margin-bottom:15px;
+}
+
+
+/* Action Buttons
+----------------------------------- */
+.listActionBtnL,
+.listActionBtnC,
+.listActionBtnR {
+    margin: 0;
+}
+.listActionBtnL {
+    text-align: left;
+}
+.listActionBtnC {
+    text-align: center;
+}
+.listActionBtnR {
+    text-align: right;
+}
+.listActionBtnL li,
+.listActionBtnC li,
+.listActionBtnR li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+}
+.listActionBtnL li {
+    margin-right: 10px;
+}
+.listActionBtnC li {
+    margin: 0 5px;
+}
+.listActionBtnR li {
+    margin-left: 10px;
+}
+
+/* text
+----------------------------------- */
+.textAC{
+    text-align:center;
+}
+
+
+/* Data Table
+----------------------------------- */
+.tblData {
+    font-size:95%;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    width:690px;
+}
+.tblData th,
+.tblData td {
+    padding: 12px 10px;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background-color:#ffffff;
+}
+.tblData th {
+    font-weight:bold;
+    width:150px;
+}
+.tblData tr.even td {
+}
+
+/* Form Parts
+----------------------------------- */
+
+/* listSelect */
+.listSelect {
+    margin: 1em 0;
+}
+
+/* listSelectLine */
+.listSelectLine {
+}
+.listSelectLine li {
+    display: inline-block;
+    _display: inline;
+    _zoom: 1;
+    margin-right: 1em;
+}
+
+.formList dt{
+    float:left;
+    clear:left;
+    width:150px;
+    margin-right:10px;
+}
+.formList dd{
+    float:left;
+    width:515px;
+}
+
+/* formsize */
+input.formSS {
+    margin:3px 12px 3px 0;
+    text-align:center;
+    width:50px;
+}
+input.formS {
+    width:150px;
+    margin:3px 0;
+}
+input.formM {
+    width:350px;
+    margin:3px 0;
+}
+
+/* textbox */
+.textbox {
+    height:200px;
+    width:510px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.inputError {
+    background-color: #ffeee1;
+    padding-top:10px;
+}
+input.disabled,
+textarea.disabled {
+    background: #c0c0c0;
+    color: #999;
+    cursor: default;
+}
+
+/* others */
+.input,
+textarea{
+    background:none repeat scroll 0 0 #FFFFFF;
+    border:1px solid #CCCCCC;
+    font-size:93%;
+    margin:0 4px 0 0;
+    padding:2px 0;
+}
+.msgNote {
+    margin: 3px 0;
+    color: #666;
+}
+.msgError {
+    margin: 3px 0;
+    color: #dd6611;
+    font-weight:bold;
+}
+.required {
+    margin-right: 0.2em;
+    color: #dd6611;
+    font-weight: normal;
+}
+.disabled {
+    color: #777777;
+    cursor: default;
+}
+
+/* Pager
+----------------------------------- */
+.pager {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+.pager li {
+    display: inline;
+    margin: 0 2px;
+}
+.pager strong {
+    padding: 3px 6px;
+    border: 1px solid #cccccc;
+    font-size: 93%;
+    font-weight: bold;
+    background: #e4e4cc;
+}
+.pager li a {
+    padding: 3px 6px;
+    border: 1px solid #CCCCCC;
+    font-size: 93%;
+    background:#ffffff;
+}
+.pager li a:hover {
+    color: #FFFFFF;
+    background: #bbbf11;
+}
+
+/* box
+----------------------------------- */
+.boxStyle1{
+    background-color:#E4E4CC;
+    padding:20px;
+}
+.boxStyle2{
+    background-color:#ffffff;
+    border: 1px solid #99aa22;
+    padding:20px;
+}
+
+/* prevNext
+----------------------------------- */
+.prevNext {
+    overflow: hidden;
+    margin: 10px 0;
+}
+.prevNext .prev {
+    float:left;
+    text-align:left;
+    width:280px;
+}
+.prevNext .center {
+    float:left;
+    text-align:center;
+    width:130px;
+}
+.prevNext .next {
+    float:right;
+    text-align:right;
+    width:280px;
+}
+.prevNext li a {
+    padding: 3px 6px;
+    border: 1px solid #CCCCCC;
+    font-size: 93%;
+    background:#ffffff;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.prevNext li a:hover {
+    color: #FFFFFF;
+    background: #bbbf11;
+}
+
+ /* section
+----------------------------------- */
+.section10{
+    margin-bottom:10px;
+}
+
+.section20{
+    margin-bottom:20px;
+}
+.section30{
+    margin-bottom:30px;
+}
+.section40{
+    margin-bottom:40px;
+}
+.section50{
+    margin-bottom:50px;
+}
+.section60{
+    margin-bottom:60px;
+}
+
+/* --------------------------------------------------
+    90. Other
+-------------------------------------------------- */
+.btn { cursor: pointer; }
+
+/* for Voice Browser */
+.hidden {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Noscript Message */
+#msgNoscript {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 5px 0;
+    border-top: 1px solid #f00;
+    border-bottom: 1px solid #f00;
+    background: #fcc;
+    color: #f00;
+    line-height: 1.2;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+@charset "UTF-8";
+/* CSS Document */
+
+/*  [[[ TOPIMG-AREA ]]] 
+-----------------------------------*/
+.slideshow {
+    overflow: hidden;
+    width: 100%;
+    background-color:#e4e4cc;
+}
+.slideshow ul {
+    overflow: hidden;
+    width: 8900px;
+}
+.slideshow ul li {
+    float: left;
+}
+
+
+/* weeklyLunch */
+#weeklyLunch{
+    // position:absolute;
+    // background:url(/img/top/bg_wlunch.png) no-repeat;
+    // top:-360px;
+    // right:0;
+    height:330px;
+    width:220px;
+    z-index:100;
+}
+
+
+/*  main
+----------------------------------- */
+
+/* news */
+.ttlStyle6{
+    margin-bottom:12px;
+}
+
+.newscontent li{
+    line-height:1.8;
+}
+.newscontent li p.date{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 130px;
+}
+
+.newscontent li p.linkStyle1{
+    display:inline;
+    line-height:1.8;
+}
+
+
+.listItem{
+    float:left;
+    padding-right:5px;
+    width:133px;
+}
+.listItem dt{
+    margin-bottom:10px;
+}
+.listItem02{
+    float:left;
+    padding-right:5px;
+}
+
+/*  sub
+----------------------------------- */
+
+body#pageTop .blockSideLunch,
+body#pageTop .blockSideEvent,
+body#pageTop .blockSideNews{
+    display:none;
+}

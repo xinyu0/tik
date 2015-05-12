@@ -14,13 +14,14 @@ $base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color: #111;
-$background-color: #fff;
+$text-color: #332200;
+$background-color: #F5F6F0;
 $brand-color: #424242;
-$primary-color:	#14B7EC;
+$primary-color:	#B0BF24;
 // $primary-color:	black;
-// $secondary-color:	#F85000;
-$secondary-color:	#EF3431;
+$secondary-color:	#F85000;
+$link-color:#533401;
+
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -55,7 +56,8 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "responsive-nav"
+        "responsive-nav",
+        "style"
 ;
 
 	h1 {
@@ -184,23 +186,19 @@ $gut: 4%;
 }
 
 .main {
-	background: linear-gradient(rgba(20,183,236,0.3), rgba(20,183,236,0.3)),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(http://i.imgur.com/C1kOhCx.jpg) no-repeat center center;
+  background: linear-gradient(rgba(248,80,0,0.2), rgba(248,80,0,0.2)),url(http://i.imgur.com/F0LJgW1.jpg) no-repeat center center, $secondary-color;
+  
 	background-size: cover;
-	height: 700px;
+	height: 350px;
+  margin-bottom:40px;
 	h1 {
-		color:$secondary-color;
-		// color:$primary-color;
+		color:$primary-color;
 		// color: white;
 		font-size: 5rem;
 		text-transform: uppercase;
 		letter-spacing: 1rem;
 		font-weight: bold;
-		// text-align: center;
-		
-		opacity: 0.5;
 		&:nth-of-type(1) {
-			margin-top: 10rem;
 			color:$primary-color;
 		}
 	}
@@ -227,3 +225,10 @@ $gut: 4%;
 // * {
 //    border: 1px solid red !important;
 // }
+
+.logo {
+  display: block;
+  float: left;
+  width: 150px;
+  margin-top: 40px;
+}
