@@ -32,10 +32,13 @@
     // background: linear-gradient(rgba(20,183,236,0.5), rgba(20,183,236,0.5));
     clear: both;
     padding: $spacing-unit 0;
-    border-top: 2px white solid;
+    border-top: 3px white solid;
     // color: white;
     font-size: 0.9rem;
-
+    h6 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
 }
 
 .footer-heading {
