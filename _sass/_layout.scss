@@ -36,10 +36,16 @@
     // color: white;
     font-size: 0.9rem;
     h6 {
-        font-size: 1rem;
-        font-weight: 700;
+        font-family: $h-font-family;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05rem;
+          font-weight: 700;
     }
-}
+    .col4 {
+        vertical-align: bottom;
+    }
+ }
 
 .footer-heading {
     font-size: 18px;
@@ -144,16 +150,16 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    // margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 36px;
-    letter-spacing: -1px;
-    line-height: 1;
+    background: #E4E4CC;
 
+    @include title;
+    padding-top: $spacing-unit;
     @include media-query($on-laptop) {
-        font-size: 42px;
+        font-size: 2rem;
     }
 }
 
