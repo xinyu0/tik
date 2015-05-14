@@ -2,19 +2,22 @@
 
 .nav-collapse {
   float: right;
+  clear: both;
 
 ul {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding: 0;
-  display: inline-block;
   list-style: none;
   height: 80px;
+  clear: both;
+  float: right;
 }
 }
 
 .nav-collapse li {
-  display: inline-block;
-  height: 80px;
+  display: block;
+  margin-right: $spacing-unit;
+  // height: 80px;
   // border-left: 1px $link-color solid;
   // &:first-of-type {
   //   border-right: 1px $link-color solid;
@@ -43,12 +46,25 @@ ul {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  float: right;
+    font-family: $h-font-family;
+    font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      padding: 28px $spacing-unit;
+      // color: #523300;
+      font-weight: 700;
+
 }
 
 @media screen and (min-width: $on-palm) {
+  .nav-collapse {
+
+  clear: none;}
+
   .js .nav-collapse {
     position: relative;
-    width: 28%;
+    width: 51%;
     float: right;
     // margin: 0 auto;
     // background: #ABB94B;
@@ -62,16 +78,29 @@ ul {
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       line-height: 2;
-      margin: 30px 20px;
+      margin: 30px 0px 30px 20px;
       // color: #523300;
       font-weight: 700;
 
     }
   }
+
+  .nav-collapse li {
+  margin-right: 0;
+  display: inline-block;
+  // height: 80px;
+  // border-left: 1px $link-color solid;
+  // &:first-of-type {
+  //   border-right: 1px $link-color solid;
+  // }
+
+}
   .js .nav-collapse.closed {
     max-height: none;
   }
   .nav-toggle {
     display: none;
+    
+
   }
 }
