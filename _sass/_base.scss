@@ -193,12 +193,13 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        // width: 16px;
+        // height: 16px;
+        text-align: center;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: white;
         }
     }
 }

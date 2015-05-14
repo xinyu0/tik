@@ -261,7 +261,7 @@ $gut: 4%;
 	background-size: cover;
 	height: 350px;
   margin-bottom:40px;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 	h1 {
 		// color:$primary-color;
 		color: white;
@@ -302,22 +302,29 @@ $gut: 4%;
   // margin: 40px 0;
 }
 
+.social {
+  background: $grey-color;
+  opacity: 0.7;
+}
+
 .logosm {
-  border-bottom: 2px white solid;
+  display: block;
+  float: left;
   text-align: center;
   font-size: 0.8rem;
-  color:$grey-color;
+  color:white;
   width: 122px;
-  margin: 0 auto;
+  // margin: 0 auto;
   margin-bottom: $spacing-unit;
   padding-bottom: $spacing-unit;
+  line-height: 0.5;
   span{
     font-family: 'Berkshire Swash', cursive;
     font-size: 2rem;
     display: block;
     text-align: center;
     letter-spacing: 0.1rem;
-    height: 1.2rem;
+    line-height: 50px;
 }
 }
 
@@ -437,6 +444,44 @@ $gut: 4%;
     clear: both;
   }
 }
+
+.phone {
+  font-style: oblique;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+
+.social2 {
+  padding-top: 2rem;
+  float: right;
+  li {
+    display: inline-block;
+    // background: white;
+    width: 40px;
+    height: 40px;
+    //   @include border-top-radius(50%);
+    // @include border-right-radius(50%);
+    // @include border-bottom-radius(50%);
+    // @include border-left-radius(50%);
+
+  }
+}
+
+.contact {
+  padding: 2rem 0;
+}
+
+.space {
+  color:transparent;
+}
+
+#menu_icon {
+  width:30px;
+  height: 30px;
+  background: url(http://xinyudesign.com/tik/img/menuicon.svg);
+}
+
+
 // * {
 //    border: 1px solid red !important;
 // }
