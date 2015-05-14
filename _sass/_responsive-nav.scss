@@ -48,12 +48,13 @@ ul {
 @media screen and (min-width: $on-palm) {
   .js .nav-collapse {
     position: relative;
-    width: 70%;
+    width: 28%;
     float: right;
     // margin: 0 auto;
     // background: #ABB94B;
     li {
       text-align: center;
+      float: right;
     }
     a {
       font-family: $h-font-family;

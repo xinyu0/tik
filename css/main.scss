@@ -344,6 +344,32 @@ $gut: 4%;
     opacity: 1;}
 }
 
+.menumd {
+  border: 5px white solid;
+  min-height: 150px;
+  // webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; 
+  // opacity: 0.8;
+  // &:hover {
+
+  //   border: 5px $primary-color solid;
+  //   opacity: 1;}
+}
+
+.menupic {
+  height: 150px;
+}
+
+.card {
+  background: $primary-color;
+  min-height: 200px;
+  h4 {
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+    // line-height: 180px;
+  }
+}
+
 .sm1 {
   background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/menusm1.jpg) no-repeat center center;
   background-size: cover;
@@ -376,9 +402,41 @@ $gut: 4%;
 .about1 {
   background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about1.jpg) no-repeat center center;
   background-size: cover;
-  height: 200px;
+  height: 500px;
 }
 
+.menuitem {
+  h5 {
+    font-family: $h-font-family;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    float: left;
+    width: 80%;
+    padding-top: 10px;
+    line-height: 1.5;
+  }
+  h6 {
+    float: right;
+    width: 20%;
+    color: $secondary-color;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 8px;
+    
+  }
+  p {
+    font-size: 0.9rem;
+
+  }
+}
+
+.menu_main {
+  section {
+    clear: both;
+  }
+}
 // * {
 //    border: 1px solid red !important;
 // }
