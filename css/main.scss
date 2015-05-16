@@ -482,7 +482,7 @@ $gut: 4%;
   right:$spacing-unit;
   top:50px;
   display: block;
-  background: url(http://xinyudesign.com/tik/img/menuicon.svg), $primary-color;
+  background: url(http://xinyudesign.com/tik/img/menuicon.svg);
   background-size: cover;
   cursor: pointer;
   @include media-query($on-laptop) {
@@ -490,6 +490,23 @@ $gut: 4%;
   }
 }
 
+.btn {
+  display: block;
+  float: right;
+  padding: 10px 20px 8px;
+  font-family: $h-font-family;
+          font-size: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          background: $primary-color;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
 
 // * {
 //    border: 1px solid red !important;
