@@ -343,12 +343,12 @@ $gut: 4%;
 .menusm {
   border: 5px white solid;
   height: 150px;
-  webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; 
-  opacity: 0.8;
-  &:hover {
+  // webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; 
+  opacity: 1;
+  // &:hover {
 
-    border: 5px $primary-color solid;
-    opacity: 1;}
+  //   border: 5px $primary-color solid;
+  //   opacity: 1;}
 }
 
 .menumd {
