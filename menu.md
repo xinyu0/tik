@@ -6,11 +6,11 @@ permalink: /menu/
 <div class="menu_main">
 
 <section>
-	<!-- 1 -->
+	
     <div class="col4 menumd card">
     <h4>STARTERS</h4>
     </div>
-    <!-- 2 -->
+    
 
     <div class="col4 menumd">
     	<div class="menupic menu1"></div>
@@ -20,13 +20,13 @@ permalink: /menu/
     	</p>
     	</div>
     </div>
-    <!-- 3 -->
+   
     <div class="col4 menumd">
     	<div class="menupic menu2"></div>
     	<div class="menuitem"><h5>Samosa Chaat</h5><h6>3.5</h6>
-		<p>Classic Indian street fare! Samosas topped with onions,
+		<p>Classic Indian street fare. Samosas topped with onions,
 garbanzo beans, raita, chutneys & roti crisps. An
-adventure for the taste buds!
+adventure for the taste buds.
     	</p>
     	</div>
     </div>
