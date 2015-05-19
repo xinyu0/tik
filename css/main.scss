@@ -178,7 +178,7 @@ $gut: 4%;
   width: ($col*$cnum)+($gut*(($cnum)-1));
   float: left;
   margin-right: $gut;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   box-sizing:border-box;
 }
 
@@ -208,15 +208,15 @@ $gut: 4%;
 
 .col12 { 
     width:100%;
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
+    margin: 2rem 0 1rem 0;
 }
 
 
 
 .col8 {
-  border-top: 1px solid black;
   // padding-top: 30px;
-  margin-top: 50px;
+  margin-bottom: 2rem;
 }
 
 
@@ -444,22 +444,39 @@ $gut: 4%;
 .about1 {
   background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about1.jpg) no-repeat center center;
   background-size: cover;
-  height: 500px;
+  height: 250px;
+}
+
+.about4 {
+  background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about4.jpg) no-repeat center center;
+  background-size: cover;
+  height: 250px;
 }
 
 .about2 {
   background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about2.jpg) no-repeat center center;
   background-size: cover;
-  height: 300px;
+  height: 250px;
 }
 
 .about3 {
   background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about3.jpg) no-repeat center center;
   background-size: cover;
-  height: 300px;
+  height: 250px;
 }
 
 
+.about5 {
+  background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/DDS3Z8J98X.jpg) no-repeat center center;
+  background-size: cover;
+  height: 250px;
+}
+
+.about6 {
+  background: linear-gradient(rgba(248,80,0,0.1), rgba(248,80,0,0.1)),url(http://xinyudesign.com/tik/img/about6.jpg) no-repeat center center;
+  background-size: cover;
+  height: 250px;
+}
 .menuitem {
   background: white;
   padding: 10px 20px;
@@ -672,6 +689,7 @@ $gut: 4%;
   h4 {
     padding-bottom: 10px;
     font-size: 1.7rem;
+    border-bottom: 3px white solid;
   }
 
   h6 {
@@ -679,10 +697,10 @@ $gut: 4%;
     font-size: 1.4rem;
   }
 
-  p {
-  font-size: 1.3rem;
-  opacity: 0.8;
-  }
+  // p {
+  // font-size: 1.3rem;
+  // opacity: 0.8;
+  // }
 }
 // * {
 //    border: 1px solid red !important;
