@@ -16,9 +16,9 @@ permalink: /about/
 	</div>
 </section>
 <section>
-<div class="col6 about4">
-</div>
 <div class="col6 about1">
+</div>
+<div class="col6 about4">
 </div>
 </section>
 
